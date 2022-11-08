@@ -1,11 +1,11 @@
 create table danhbaa(
-    ten varchar(100),
-    diachi varchar(255),
-    ngaysinh date,
+    ten varchar(100) not null,
+    diachi varchar(255) not null,
+    ngaysinh date not  null,
     id int primary key
 );
 create table nguoidung(
-    dienthoai varchar(15),
+    dienthoai varchar(15) not null,
     idND int foreign key references danhbaa(id)
 );
 
